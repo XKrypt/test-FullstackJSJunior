@@ -1,0 +1,25 @@
+{
+  "name": "nodejsrestapi",
+  "version": "1.0.0",
+  "description": "Aplicação com nodejs com express que cadastra, altera e exclui usuarios com senha",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js  --ignore *.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XKrypt/NodejsRestAPI.git"
+  },
+  "author": "Raphael de Oliveira Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XKrypt/NodejsRestAPI/issues"
+  },
+  "homepage": "https://github.com/XKrypt/NodejsRestAPI#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9"
+  }
+}
