@@ -1,9 +1,14 @@
 class usersManager {
+
+
+    //Carrega os usuarios
     constructor(users) {
         this.users = users.users;
         console.log(this.users)
     }
 
+
+    //Adiciona um usuario com email e senha
     addUser(email, senha) {
         const id = this.users.length
         let newUser = {
@@ -14,6 +19,8 @@ class usersManager {
         this.users.push(newUser)
     }
 
+
+    //Altera um usuario dado o id
     alterUser(id, email, senha) {
         for (let index = 0; index < this.users.length; index++) {
             let element = this.users[index];
@@ -29,7 +36,7 @@ class usersManager {
         }
     }
 
-
+    //Deleta um usario que contém o id fornecido
     deleteUser(id) {
         var newUsers = this.users.filter((value) => {
             return value.id != id;
@@ -38,14 +45,18 @@ class usersManager {
         this.users = newUsers;
     }
 
+    //Deleta todos os usuarios
     deleteAllUsers() {
         this.users = []
     }
 
+    //Lista todos os usuarios
     listUsers() {
         return this.users;
     }
 
+
+    //Retorna um usuario que contém o id fornecido
     getUserById(id) {
         var user;
 
